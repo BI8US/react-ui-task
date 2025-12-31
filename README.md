@@ -48,7 +48,7 @@ Instead of simple placeholder pages, I implemented interactive mini-apps to make
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/BI8US/react-ui-task.git](https://github.com/YOUR_USERNAME/react-ui-task.git)
+    git clone https://github.com/BI8US/react-ui-task.git
     cd react-ui-task
     ```
 
@@ -80,6 +80,8 @@ src/
 ├── pages/             # Page components (Home, Snake, Wheel, Auth pages)
 └── App.tsx            # Main routing logic
 ```
+
+---
 
 ## 🧪 Testing
 The project includes tests configured with Vitest.
