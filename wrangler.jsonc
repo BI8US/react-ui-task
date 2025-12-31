@@ -1,0 +1,7 @@
+{
+  "name": "react-ui-task",
+  "compatibility_date": "2025-12-31",
+  "assets": {
+    "directory": "./dist"
+  }
+}
