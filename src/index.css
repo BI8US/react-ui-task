@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+
+        --bg-color: white;
+        --surface-color: white;
+
+        --text-main: oklch(0% 0 0);
+        --text-muted: oklch(55% 0 0);
+        --text-secondary: oklch(100% 0 0);
+
+        --primary: oklch(55% 0.22 260);
+        --primary-light: oklch(65% 0.22 260);
+        --primary-hover: oklch(45% 0.22 260);
+
+        --secondary: oklch(96% 0 0);
+        --secondary-hover: oklch(92% 0 0);
+
+        --danger: oklch(55% 0.2 25);
+        --danger-hover: oklch(45% 0.2 25);
+
+        --success: oklch(60% 0.18 145);
+        --border-color: oklch(90% 0 0);
+    }
+
+    .dark {
+        --bg-color: oklch(15% 0.02 260);
+        --surface-color: oklch(20% 0.02 260);
+
+        --text-main: oklch(98% 0 0);
+        --text-muted: oklch(70% 0.01 260);
+        --text-secondary: oklch(15% 0.02 260);
+
+        --primary: oklch(65% 0.22 260);
+        --primary-light: oklch(75% 0.22 260);
+        --primary-hover: oklch(70% 0.22 260);
+
+        --secondary: oklch(25% 0.02 260);
+        --secondary-hover: oklch(30% 0.02 260);
+
+        --danger: oklch(65% 0.2 25);
+        --danger-hover: oklch(70% 0.2 25);
+
+        --success: oklch(70% 0.18 145);
+        --border-color: oklch(30% 0.02 260);
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+}
+
+@theme {
+    --color-primary: var(--primary);
+    --color-primary-light: var(--primary-light);
+    --color-primary-hover: var(--primary-hover);
+
+    --color-secondary: var(--secondary);
+    --color-secondary-hover: var(--secondary-hover);
+
+    --color-danger: var(--danger);
+    --color-danger-hover: var(--danger-hover);
+
+    --color-success: var(--success);
+
+    --color-background: var(--bg-color);
+    --color-surface: var(--surface-color);
+
+    --color-text-main: var(--text-main);
+    --color-text-muted: var(--text-muted);
+    --color-text-secondary: var(--text-secondary);
+
+    --color-border: var(--border-color);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.perspective-1000 { perspective: 1000px; }
+.transform-style-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
+
+@keyframes flip {
+    0% { transform: rotateY(0); }
+    50% { transform: rotateY(1800deg) scale(1.2); }
+    100% { transform: rotateY(3600deg) scale(1); }
+}
+.animate-flip {
+    animation: flip 1s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+}

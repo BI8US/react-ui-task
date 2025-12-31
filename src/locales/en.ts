@@ -1,0 +1,90 @@
+export const TEXTS = {
+    auth: {
+        companyName: "React Demo App",
+        welcome: "Welcome back",
+        createAccount: "Create an account",
+        noAccount: "No account yet?",
+        alreadyHaveAccount: "Already have an account?",
+        register: "Register",
+        login: "Log in",
+        forgotPassword: "Forgot password?",
+        signIn: "Sign In",
+        labels: {
+            name: "Full Name",
+            email: "Email",
+            password: "Password",
+            confirmPassword: "Confirm Password",
+        },
+        resetPassword: "Reset Password",
+        resetDesc: "Enter your email address and we'll send you a link to reset your password.",
+        sendResetLink: "Send Reset Link",
+        backToLogin: "Back to Log In",
+        resetSuccess: "Check your email! We have sent a password reset link.",
+        emailSent: "Email Sent",
+    },
+    validation: {
+        nameRequired: "Name is required",
+        emailRequired: "Email is required",
+        emailInvalid: "Please enter a valid email address",
+        passwordRequired: "Password is required",
+        passwordMinLength: "Password must be at least 6 characters",
+        passwordsDoNotMatch: "Passwords do not match",
+    },
+    nav: {
+        logo: "DEMO",
+        home: "Home",
+        coin: "Coin",
+        snake: "Snake",
+        wheel: "Wheel",
+        logout: "Log out",
+    },
+    pages: {
+        home: {
+            title: "Welcome to the Demo",
+            subtitle:
+                "This is a test assignment. Since there were no specific content requirements, I decided to have some fun and build interactive mini-apps.",
+            cards: {
+                coin: {
+                    title: "Decision Maker",
+                    desc: "Can't decide? Flip a coin.",
+                },
+                snake: {
+                    title: "Retro Snake",
+                    desc: "Classic game to kill some time.",
+                },
+                wheel: {
+                    title: "Wheel of Fortune",
+                    desc: "Random picker for your choices.",
+                },
+            },
+        },
+        coin: {
+            title: "Coin Flip",
+            content: "Can't make up your mind? Let's flip a coin.",
+            flipping: "Flipping...",
+            flip: "Flip Coin",
+            heads: "HEADS",
+            tails: "TAILS",
+        },
+        snake: {
+            title: "Retro Snake",
+            score: "SCORE",
+            best: "BEST",
+            start: "Start Game",
+            again: "Try Again",
+            gameOver: "Game Over!",
+            controls: "Use WASD, Arrow Keys or Buttons to move",
+        },
+        wheel: {
+            title: "Wheel of Fortune",
+            desc: "Add options and their weights to customize your chances.",
+            winner: "Winner",
+            addOption: "Add Option",
+            inputs: {
+                label: "Name",
+            },
+            luck: "Good luck!",
+            spin: "SPIN",
+        },
+    },
+};
